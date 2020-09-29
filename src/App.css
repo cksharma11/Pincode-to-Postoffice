@@ -1,0 +1,85 @@
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App-header {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.pincode-search {
+  height: 30px;
+  width: 300px;
+  padding: 5px;
+  border: 1px solid;
+}
+
+.search-bar {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button {
+  height: 30px;
+  width: 100px;
+  border: 1px solid;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.search-button:focus {
+  outline: none;
+}
+
+.search-button:hover {
+  font-weight: bold;
+}
+
+#pincodeData {
+  border-collapse: collapse;
+  width: 80%;
+}
+
+#pincodeData td,
+#pincodeData th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#pincodeData tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#pincodeData tr:nth-child(odd) {
+  background-color: white;
+}
+
+#pincodeData tr:hover {
+  background-color: #ddd;
+}
+
+#pincodeData th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #282c34;
+  color: white;
+}
+
+.not-found {
+  color: white;
+}
