@@ -10,8 +10,8 @@ const ResultsTable = ({ pincodeData }) => {
       </tr>
       {pincodeData.map((data) => (
         <tr>
-          {Object.keys(data).map((key) => (
-            <td key={JSON.stringify(data[key])}>{data[key]}</td>
+          {Object.keys(data).map((key, index) => (
+            <td key={`${index}${key}}`}>{data[key]}</td>
           ))}
         </tr>
       ))}
